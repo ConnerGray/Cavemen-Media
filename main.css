@@ -59,7 +59,7 @@ header {
 .landing-section {
     height: 90vh;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#252525), to(#555));
-  background-image: linear-gradient(0deg, #252525, #555);
+    background-image: linear-gradient(0deg, #252525, #555);
 }
 
 .landing-container {
@@ -126,6 +126,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 10px 0 0 10px;
+    text-align: center;
 }
 
 .social-links-container h1 {
@@ -178,3 +179,43 @@ header {
     margin-top: 20px;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+    .landing-container {
+        flex-direction: column;
+    }
+
+    .landing-content {
+        padding: 20px;
+    }
+
+    .landing-photo {
+        padding: 20px;
+    }
+
+    .landing-photo img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .podcast-links-section {
+        height: auto;
+    }
+
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links-section {
+        height: auto;
+    }
+
+    .social-links-container {
+        padding: 10px;
+    }
+
+    .contact-form{
+        width: 75%;
+    }
+}
