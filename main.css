@@ -65,14 +65,18 @@ header {
 
 .landing-container {
     display: flex;
+    padding-top: 100px;
     align-items: center;
     color: var(--linen);   
+    justify-content: center;
+    align-items: center;
 }
 
 .landing-content {
     display: flex;
     flex-direction: column;
     padding: 0 0px 0 200px;
+    width: 50%;
 }
 
 .landing-photo {
@@ -110,6 +114,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 50px;
 }
 
 .link-container img {
@@ -196,10 +201,12 @@ header {
     
     .landing-container {
         flex-direction: column;
+        padding-top: 0px;
     }
 
     .landing-content {
         padding: 20px;
+        width: 80%;
     }
 
     .landing-photo {
@@ -219,6 +226,7 @@ header {
     .link-container {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
+        margin-top: 0px;
     }
 
     .social-links-section {
