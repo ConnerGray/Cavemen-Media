@@ -18,6 +18,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 h1 {font-size: 3rem;}
 h3 {font-size: 1.2rem; font-weight: 300;}
 
@@ -25,15 +29,19 @@ h3 {font-size: 1.2rem; font-weight: 300;}
 
 header {
     height: auto;
+    width: 100vw;
     background-color: #555;
-    padding-top: 10px
+    padding-top: 10px;
 }
 
 .header-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
 }
 
 .header-container img {
@@ -204,9 +212,9 @@ span {
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px) {
     .header-container {
-        width: 100%;
+        width: 90%;
         justify-content: space-between;
-        padding-right: 40px;
+        
     }
     
     .landing-container {
