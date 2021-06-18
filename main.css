@@ -6,7 +6,7 @@
 
 :root {
     --dark-gray: #121212;
-    --linen: #f3f3f3;
+    --linen: #ffffff;
     --red: #ea3031;
 }
 
@@ -130,7 +130,7 @@ span {
     padding-top: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-evenly;
-    width: 100%;
+    width: 80%;
     margin-top: 50px;
 }
 
@@ -208,6 +208,7 @@ span {
     border: none;
     border-radius: 5px;
     margin-top: 20px;
+    cursor: pointer;
     -webkit-appearance: none;
 }
 
