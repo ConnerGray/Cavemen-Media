@@ -5,8 +5,9 @@
 }
 
 :root {
-    --dark-gray: #333333;
-    --linen: #eae7de;
+    --dark-gray: #121212;
+    --linen: #f3f3f3;
+    --red: #ea3031;
 }
 
 body {
@@ -25,6 +26,7 @@ h3 {font-size: 1.2rem; font-weight: 300;}
 header {
     height: auto;
     background-color: #555;
+    padding-top: 10px
 }
 
 .header-container {
@@ -35,19 +37,19 @@ header {
 }
 
 .header-container img {
-    height: 100px;
-    width: 150px;
+    height: 60px;
+    width: 60px;
 }
 
 .contact-button {
     padding: 10px;
-    background-color: var(--linen);
-    color: var(--dark-gray);
+    background-color: var(--red);
+    color: var(--linen);
     font-size: 16px;
     border: none;
     border-radius: 5px;
     font-family: 'Russo One', sans-serif;
-    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 .contact-button-container {
@@ -58,42 +60,49 @@ header {
 /* LANDING SECTION */
 
 .landing-section {
-    height: 90vh;
+    height: 60vh;
+    width: 100vw;
     background-image: -webkit-gradient(linear, left bottom, left top, from(#252525), to(#555));
     background-image: linear-gradient(0deg, #252525, #555);
 }
 
 .landing-container {
     display: flex;
-    padding-top: 100px;
     align-items: center;
     color: var(--linen);   
     justify-content: center;
     align-items: center;
+    height: 100%;
+    text-align: center;
 }
 
 .landing-content {
     display: flex;
     flex-direction: column;
-    padding: 0 0px 0 200px;
-    width: 50%;
+    width: 50%
 }
 
-.landing-photo {
-    padding: 100px 175px 0 50px;
+span {
+    color: var(--red);
 }
 
-.landing-photo img {
-    height: 350px;
-    width: 350px;
-    border-radius: 8px;
+/* Image Section */
+.image, .container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.twitter-header {
+    height: auto;
+    width: 100%;
 }
 
 /* PODCAST LINKS SECTION*/
 
 .podcast-links-section {
     background-color: var(--linen);
-    height: 40vh;
+    height: auto;
+    padding: 20px 0 20px 0;
 }
 
 .podcast-links-container {
@@ -118,15 +127,16 @@ header {
 }
 
 .link-container img {
-    height: 150px;
-    width: 150px;
-    border-radius: 30px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
 }
 
 /* Socail Media Links Section */
 .social-links-section {
     background-color: var(--dark-gray);
-    height: 40vh;
+    height: auto;
+    padding: 20px 0 20px 0;
 }
 
 .social-links-container {
@@ -158,7 +168,7 @@ header {
 
 .contact-form {
     margin-top: 20px;
-    width: 30%;
+    width: 50%;
 }
 
 #email-form {
